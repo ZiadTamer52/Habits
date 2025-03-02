@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #1e1e1e;
+    color: white;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #252525;
+    border-radius: 10px;
+}
+
+/* Input Section */
+.input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    background: #333;
+    border: 1px solid #444;
+    color: white;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background: #007acc;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #005f99;
+}
+
+/* Habit Buttons */
+.habit button {
+    background: none;  /* No background color */
+    color: white;  /* White text */
+    font-size: 16px;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Hover Effect (Optional) */
+.habit button:hover {
+    color: #ccc; /* Lighter shade on hover */
+}
+
+/* Habit List */
+.habit {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background: #333;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+/* Theme Toggle Button */
+#toggleTheme {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #444;
+    border: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#toggleTheme:hover {
+    background: #666;
+}
+
+/* Light Mode */
+.light-mode {
+    background: #f4f4f4;
+    color: black;
+}
+
+.light-mode .container {
+    background: white;
+}
+
+.light-mode input {
+    background: white;
+    color: black;
+    border: 1px solid #ccc;
+}
+
+.light-mode .habit {
+    background: #ddd;
+}
+
+.light-mode #toggleTheme {
+    background: #ccc;
+    color: black;
+}
+
+.light-mode #toggleTheme:hover {
+    background: #bbb;
+}
+
+/* Progress Chart */
+canvas {
+    max-width: 100%;
+    max-height: 250px;
+}
